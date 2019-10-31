@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Gfname HTML</title>
+    </head>
+    <body>
+        <h1>Hello {{uname}}</h1>
+        <hr>
+        <form method = "POST" action="">
+            {% csrf_token %}
+            Enter GFName:<input type="text" name="gfname"><br><br>
+            <input type = "submit" value="submit Gfname"> 
+        </form>
+
+    </body>
+</html>

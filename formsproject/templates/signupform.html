@@ -1,0 +1,20 @@
+<html>
+    <head></head>
+    <body>
+        <h1>This is Registration Form</h1>
+        <form method="POST" action=''>
+            {% csrf_token %}
+            {% for error in form.uname.errors %}
+                <p>{{error}}</p>
+            {% endfor %}
+        UserName:<input type="text" name="uname"><br><br>
+
+        <!-- {% for error in form.uemail.errors %}
+                <p>{{error}}</p>
+            {% endfor %} -->
+            {{form.uemail.errors}}
+        Email:<input type="email" name="uemail"><br><br>
+        <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

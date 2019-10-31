@@ -1,0 +1,10 @@
+<html>
+    <head>
+        <title>Add Items</title>
+    </head>
+    <h1>Add Items</h1>
+    <form method="GET" action="{% url 'success' %}">
+        {{form.as_p}}
+        <input type="submit" value="Add cart">
+    </form>
+</html>

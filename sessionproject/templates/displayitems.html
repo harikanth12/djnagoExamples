@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>Add Items</title>
+    </head>
+    <h1>Display all Items</h1>
+    <hr>
+    <ul>
+    {% for key,value in request.session.items %}
+        <li>{{key}}:{{value}}</li>
+    {% endfor %}
+</ul>
+</html>
